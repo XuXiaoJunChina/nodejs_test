@@ -1,0 +1,47 @@
+
+<div class="top top_n" style="background-image: url('/public/source/headerBG.png')">
+    <div class="forum_come forum_come_n" >
+        <!--<a style='float:left;background:none;color:#fff;font-size:12px;text-indent:0;line-height:24px' href='http://open.cocoachina.com' target='_blank'>Cocos开发者平台</a>
+        <a style='float:left;background:none;color:#fff;font-size:12px;text-indent:0;line-height:24px' href='http://cn.cocos2d-x.org' target='_blank'>Cocos引擎中文官网</a>
+        <a style='float:left;background:none;color:#fff;font-size:12px;text-indent:0;line-height:24px' href='http://store.cocos.com' target='_blank'>Cocos商店</a>-->
+
+        <form action="login.php" name="login_FORM" method="post">
+            <input name="jumpurl" value="http://www.cocoachina.com/bbs/thread.php?fid-21.html" type="hidden">
+            <input name="step" value="2" type="hidden">
+            <input name="cktime" value="31536000" type="hidden">
+
+            你好,{{user.email}}
+
+            {{if !user}}
+            <a href="register.php" style="font-size: 14px;color: white;font-weight: bold;text-decoration: none;margin-top:1px" class="forum_button">注册</a>
+            <a href="login.php" style="font-size: 14px;color: white;font-weight: bold;text-decoration: none;margin-top:1px" class="forum_button">登录</a>
+            {{/if}}
+
+            <!--<span>如果无法登录，请清理浏览器cookie后重新登录。</span>-->
+
+
+            <input name="lgt" id="nav_lgt" value="0" type="hidden">
+
+            <div id="nav_logintab" style="width:330px;position:absolute;margin-top:.2em;display:none;z-index:2">
+                <div class="t5 f_two" style="line-height:25px;">
+                    <table style="width:95%; margin:auto" cellspacing="0" cellpadding="1" align="center">
+
+                        <tbody><tr>
+                            <td>认证码</td>
+                            <td>
+                                <input class="input" name="gdcode" size="5" tabindex="12" onfocus="try{opencode('menu_gd',this)}catch(e){}" type="text"><span style="cursor:pointer; margin-left:3px" onclick="this.previousSibling.focus();">点此显示验证码</span>
+                                <div class="menu" id="menu_gd" style="visibility:hidden;">
+                                    <img src="ck.php?" style="cursor:pointer;" id="ckcode" alt="看不清楚，换一张" align="absmiddle">
+                                </div>
+                            </td>
+                        </tr>
+
+                        </tbody></table>
+                </div>
+            </div>
+
+        </form>
+
+
+    </div>
+</div>

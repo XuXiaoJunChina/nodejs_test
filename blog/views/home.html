@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+
+{{include '../views/layout/header.html'}}
+
+//内部定制.
+<!--{{block 'body'}}-->
+<!--{{/block}}}-->
+
+
+<div class="forum_center_right">
+    <div style="height:13px;overflow:hidden;"></div>
+    <div class="forum_center_wrap" style="border-bottom:1px solid #bbb;">
+        <table>
+
+            <tbody style="table-layout:fixed;">
+
+            <tr class="tr2">
+
+
+                <th style="width:140px;" class="y-style"><a href="javascript:;" >标题</a>/<a href="javascript:;">时间</a></th>
+                <th style="width:140px;" class="y-style"><a href="javascript:;" title="按发表作者排序" >作者</a>/<a href="javascript:;">时间</a></th>
+                <th style="width:100px" class="tal y-style"><a href="javascript:;" title="按回复数排序" >回复/</a><a href="javascript:;" title="按人气排序">人气</a></th>
+                <th style="width:180px;" class="y-style"><a href="javascript:;" title="按最后回复时间排序" >最后发表时间</a>/<a href="javascript:;">最后发表人员</a></th>
+            </tr>
+
+            {{each topics}}
+
+            <tr class="tr3" style="background: rgb(255, 255, 255) none repeat scroll 0% 0%;" align="center">
+
+                <td class="tal" id="td_1759267">
+
+                    <a href="read.php?tid-1759267.html" id="a_ajax_1759267" class="subject fl" target="_blank">{{$value.topic}}</a>
+
+                    <img src="images/wind2013/file/new.gif" title="新帖标志" align="absmiddle">
+
+                </td>
+                <td class="tal y-style"><a href="u.php?action=feed&amp;uid=661301" class="bl">{{$value.username}}</a><br>
+                    <div class="f10 gray">{{$value.time}}</div></td>
+                <td class="tal y-style f10 gray"><span class="s3">{{$value.relay}}</span>/{{$value.favorite}}</td>
+                <td class="tal y-style">
+                    <a href="read.php?tid-1759267-page-e-fpage-1.html#a">{{$value.lastReplyTime}}</a><br>
+                    <span class="f10 gray">{{$value.lastReplyUser}}</span>
+                </td>
+            </tr>
+
+            {{/each}}
+
+            </tbody>
+
+        </table>
+    </div>
+</div>
+
+
+{{include '../views/layout/footer.html'}}
+</body>
+</html>

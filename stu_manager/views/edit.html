@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>编辑</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    <link href="//s2.music.126.net/web/s/core_c5402f8eb69631f4d0a44069f491bb98.css?c5402f8eb69631f4d0a44069f491bb98"
+          type="text/css" rel="stylesheet">
+    <link href="//s2.music.126.net/web/s/pt_frame_5ba794d3f72977bf89dd3684273642c4.css?5ba794d3f72977bf89dd3684273642c4"
+          type="text/css" rel="stylesheet">
+</head>
+<body>
+<form action="/student/edit" method="post">
+    <input type="text" style="display: none" value="{{id}}" name="id">
+    <p>姓名</p>
+    <input type="text" value="{{name}}" name="name">
+
+    <p>姓别</p>
+    <!--//外部配置attr新增checked选项-->
+    <input type="radio" name="gender" value="1" checked="">男
+    <input type="radio" name="gender" value="0">女
+
+    <p>年龄</p>
+    <input type="text" value="{{age}}" name="age">
+
+    <p>爱好</p>
+    <input type="text" value="{{hobbies}}" name="hobbies">
+
+    <button type="submit" class="btn btn-default">提交</button>
+
+</form>
+
+<table class="m-table m-table-1 m-table-4">
+    <tbody>
+    <tr id="3940341535939019814" class=" ">
+        <td class="w1">
+            <div class="hd"><span data-res-id="394034" data-res-type="18" data-res-action="play"
+                                  data-res-from="2" data-res-data="13540"
+                                  class="ply">&nbsp;</span><span class="num">50</span></div>
+        </td>
+        <td class="">
+            <div class="f-cb">
+                <div class="tt">
+                    <div class="ttc"><span class="txt"><a href="/song?id=394034"><b
+                            title="冰封前尘">冰封<div class="soil">动用结接便</div>前尘</b></a></span></div>
+                </div>
+            </div>
+        </td>
+        <td class="w2-1 s-fc3"><span class="u-dur ">03:03</span>
+            <div class="opt hshow"><a class="u-icn u-icn-81 icn-add" href="javascript:;"
+                                      title="添加到播放列表" hidefocus="true" data-res-type="18"
+                                      data-res-id="394034" data-res-action="addto"
+                                      data-res-from="2" data-res-data="13540"></a><span
+                    data-res-id="394034" data-res-type="18" data-res-action="fav"
+                    class="icn icn-fav" title="收藏"></span><span data-res-id="394034"
+                                                                data-res-type="18"
+                                                                data-res-action="share"
+                                                                data-res-name="冰封前尘"
+                                                                data-res-author="月之门"
+                                                                data-res-pic="http://p4.music.126.net/t_AMnJTFb1AoGIvEKo_G6Q==/35184372103335.jpg"
+                                                                class="icn icn-share"
+                                                                title="分享">分享</span><span
+                    data-res-id="394034" data-res-type="18" data-res-action="download"
+                    class="icn icn-dl" title="下载"></span></div>
+        </td>
+        <td class="w4">
+            <div class="text"><a href="/album?id=39027" title="《大唐豪侠》专辑-月之门音乐原创">《大唐豪侠》专
+                <div class="soil">睂縧瑪碥</div>
+                辑-月之门音乐原创</a></div>
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+<div id="artist-top50" class="n-top50">
+    <div class="m-info">
+        <div id="content-operation" class="btns f-cb" data-rid="13540" data-type="2">
+            <a data-res-action="play" data-res-id="13540" data-res-type="2" href="javascript:;"
+               class="u-btn2 u-btn2-2 u-btni-addply f-fl" hidefocus="true" title="播放"><i><em class="ply"></em>播放</i></a>
+            <a data-res-action="addto" data-res-id="13540" data-res-type="2" href="javascript:;"
+               class="u-btni u-btni-add" hidefocus="true" title="添加到播放列表"></a>
+            <a data-res-id="13540" data-res-type="2" data-res-action="fav" href="javascript:;" class="u-btni u-btni-fav"
+               hidefocus="true" data-res-name="月之门"><i>收藏热门50</i></a>
+            <div class="f-fr">
+                <div class="u-btn2 u-btn2-1 sltbtn">
+                    <i><em class="sltbtn-txt">演唱作品</em><em class="u-icn u-icn-38 u-icn-arr"></em></i>
+                    <ul class="filter j-slt">
+                        <li class="choose z-select" data-res-type="1" data-res-action="choose" data-res-value="演唱作品">
+                            演唱作品
+                        </li>
+                        <li class="choose z-dis" data-res-type="2" data-res-action="choose" data-res-value="作词作品">作词作品
+                        </li>
+                        <li class="choose z-dis" data-res-type="3" data-res-action="choose" data-res-value="作曲作品">作曲作品
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="hotsong-list">
+        <div class="f-cb">
+            <div id="song-list-pre-cache" data-key="track_artist_top-13540" data-simple="0" data-pvnamed="0">
+                <div oncopy="return false;" oncut="return false;" ondragstart="return false;"
+                     id="auto-id-uSn6Hlt0rKv7GPlf">
+                    <div class="j-flag" id="auto-id-Ik1zkktETT2bmwoh">
+                        <table class="m-table m-table-1 m-table-4">
+                            <tbody>
+                            <tr id="3940341535939019814" class=" ">
+                                <td class="w1">
+                                    <div class="hd"><span data-res-id="394034" data-res-type="18" data-res-action="play"
+                                                          data-res-from="2" data-res-data="13540"
+                                                          class="ply">&nbsp;</span><span class="num">50</span></div>
+                                </td>
+                                <td class="">
+                                    <div class="f-cb">
+                                        <div class="tt">
+                                            <div class="ttc"><span class="txt"><a href="/song?id=394034"><b
+                                                    title="冰封前尘">冰封<div class="soil">动用结接便</div>前尘</b></a></span></div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="w2-1 s-fc3"><span class="u-dur ">03:03</span>
+                                    <div class="opt hshow"><a class="u-icn u-icn-81 icn-add" href="javascript:;"
+                                                              title="添加到播放列表" hidefocus="true" data-res-type="18"
+                                                              data-res-id="394034" data-res-action="addto"
+                                                              data-res-from="2" data-res-data="13540"></a><span
+                                            data-res-id="394034" data-res-type="18" data-res-action="fav"
+                                            class="icn icn-fav" title="收藏"></span><span data-res-id="394034"
+                                                                                        data-res-type="18"
+                                                                                        data-res-action="share"
+                                                                                        data-res-name="冰封前尘"
+                                                                                        data-res-author="月之门"
+                                                                                        data-res-pic="http://p4.music.126.net/t_AMnJTFb1AoGIvEKo_G6Q==/35184372103335.jpg"
+                                                                                        class="icn icn-share"
+                                                                                        title="分享">分享</span><span
+                                            data-res-id="394034" data-res-type="18" data-res-action="download"
+                                            class="icn icn-dl" title="下载"></span></div>
+                                </td>
+                                <td class="w4">
+                                    <div class="text"><a href="/album?id=39027" title="《大唐豪侠》专辑-月之门音乐原创">《大唐豪侠》专
+                                        <div class="soil">睂縧瑪碥</div>
+                                        辑-月之门音乐原创</a></div>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="j-flag"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

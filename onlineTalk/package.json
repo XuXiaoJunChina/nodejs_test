@@ -1,0 +1,8 @@
+{
+  "name": "onlineTalk",
+  "version": "1.0.0",
+  "dependencies": {
+    "art-template": "^4.13.0",
+    "jquery": "^3.3.1"
+  }
+}

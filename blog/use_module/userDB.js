@@ -116,3 +116,5 @@ module.exports.searchOneUser =  function (user,errCallback,succCallback) {
     })
 
 }
+
+//2018-08-13:待进入帖子发布->帖子模型->跟帖模型->发帖view->浏览帖子/跟帖详情view.
